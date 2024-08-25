@@ -1,0 +1,111 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the Weather App */
+.app {
+  background-image: url('./asset/Wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.app.warm {
+  background-image: url('./asset/download.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Main Content Styling */
+main {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 30px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #007BFF;
+}
+
+/* Location and Date Display */
+.location-box {
+  margin-top: 20px;
+}
+
+.location {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.date {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Temperature Display */
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  main {
+    width: 280px;
+  }
+
+  .search-box {
+    font-size: 16px;
+  }
+
+  .location {
+    font-size: 22px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+}
